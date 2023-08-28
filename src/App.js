@@ -35,7 +35,7 @@ function App() {
 
     try {
 <<<<<<< HEAD
-      const response = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=AIzaSyAbAt0sUj_t4qNvLTEJ9SE7hpmOzLuZRGo`);
+      const response = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=CODIGO_API_GOOGLE`);
 =======
       const response = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=CODIGO_API_GOOGLE`);
 >>>>>>> 2c23cc46c8e63212aaa9a0d181d6ad41c362530b
@@ -47,7 +47,7 @@ function App() {
 <<<<<<< HEAD
         const timeZone = data.results[0].geometry.time_zone;
 
-        const timeZoneResponse = await fetch(`https://maps.googleapis.com/maps/api/timezone/json?location=${latitude},${longitude}&timestamp=${Date.now() / 1000}&key=AIzaSyAbAt0sUj_t4qNvLTEJ9SE7hpmOzLuZRGo`);
+        const timeZoneResponse = await fetch(`https://maps.googleapis.com/maps/api/timezone/json?location=${latitude},${longitude}&timestamp=${Date.now() / 1000}&key=CODIGO_API_GOOGLE`);
 =======
         // Obtenha o fuso horário a partir dos resultados da geocodificação
         const timeZone = data.results[0].geometry.time_zone;
@@ -74,7 +74,7 @@ function App() {
   const fetchTimezone = async (lat, lng) => {
     try {
 <<<<<<< HEAD
-      const timezoneResponse = await fetch(`https://maps.googleapis.com/maps/api/timezone/json?location=${lat},${lng}&timestamp=${Date.now() / 1000}&key=AIzaSyAbAt0sUj_t4qNvLTEJ9SE7hpmOzLuZRGo`);
+      const timezoneResponse = await fetch(`https://maps.googleapis.com/maps/api/timezone/json?location=${lat},${lng}&timestamp=${Date.now() / 1000}&key=CODIGO_API_GOOGLE`);
 =======
       const timezoneResponse = await fetch(`https://maps.googleapis.com/maps/api/timezone/json?location=${lat},${lng}&timestamp=${Date.now() / 1000}&key=CODIGO_API_GOOGLE`);
 >>>>>>> 2c23cc46c8e63212aaa9a0d181d6ad41c362530b
